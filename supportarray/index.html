@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mainWrapper{
+            height: 95%;
+            width: 350px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .mainWrapper > div{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+        }
+        .name{
+            width: 130px;
+            padding-left: 16px;
+        }
+        .btnsec{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .btnsec button{
+            padding: 5px 10px;
+        }
+        .editArea{
+            border: 1px solid red;
+            height: 95dvh;
+            width: 350px;
+            margin-left: 5px;
+        }
+        .editArea textarea{
+            height: 100%;
+            width: 100%;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mainWrapper">
+        <div>
+            <div class="name">Company :</div>
+            <div><input id="company" type="text"></div>
+        </div>
+        <div>
+            <div class="name">Item group :</div>
+            <div><input id="itemgrp" type="text"></div>
+        </div>
+        <div>
+            <div class="name">Group name :</div>
+            <div><input id="grpname" type="text"></div>
+        </div>
+        <div>
+            <div class="name">Item name :</div>
+            <div><input id="itemname" type="text"></div>
+        </div>
+        <div>
+            <div class="name">Old price :</div>
+            <div><input id="oldprc" type="number"></div>
+        </div>
+        <div>
+            <div class="name">Offer price :</div>
+            <div><input id="offerprc" type="number"></div>
+        </div>
+        <div class="btnsec">
+            <button onclick="addData()">add</button>
+            <button onclick="copyItems()">copy</button>
+        </div>
+</div>
+<div class="editArea">
+    <textarea id="w3review" name="w3review">
+    </textarea>
+</div>
+<script>
+let company = document.getElementById("company");
+let itemgrp = document.getElementById("itemgrp");
+let grpname = document.getElementById("grpname");
+let itemname = document.getElementById("itemname");
+let oldprc = document.getElementById("oldprc");
+let offerprc = document.getElementById("offerprc");
+let textAR = document.querySelector(".editArea textarea");
+let newArray = ``;
+function addData(){
+    newArray = `{
+    company: "${company.value}",
+    itemGroup: "${itemgrp.value}",
+    groupName: "${grpname.value}",
+    itemName: "${itemname.value}",
+    oldPrice: ${oldprc.value},
+    offerPrice: ${offerprc.value}
+  },`;
+  console.log(newArray);
+  textAR.innerHTML += newArray;
+  
+}
+function copyItems(){
+    textAR.select();
+    textAR.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(textAR.innerHTML);
+    
+}
+</script>
+</body>
+</html>
