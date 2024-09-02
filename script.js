@@ -1818,23 +1818,18 @@ wrapper.addEventListener("click", function (e) {
 
   if (e.target.classList[0] === "on-item") {
     hideAll();
-    e.target.parentElement.nextElementSibling.style.cssText =
-      "display : block;";
+    e.target.parentElement.nextElementSibling.style.cssText =  "display : block;";
     e.target.style.cssText = "background-image: url(up-button.png);";
     e.target.classList.add("off-item");
     e.target.classList.remove("on-item");
-  } else if (e.target.classList[0] === "off-item" ) {
-    e.target.parentElement.nextElementSibling.style.cssText = "display : none;";
+  } 
+  else if (e.target.classList[0] === "off-item" ) {
+    e.target.parentElement.nextElementSibling.style.cssText =  "display : none;";
     e.target.style.cssText = "background-image: url(down-button.png);";
     e.target.classList.add("on-item");
     e.target.classList.remove("off-item");
-  } else if (e.target.classList[0] === "on-group" ) {
-    offAllg.forEach(function(offAllg) {
-        offAllg.parentElement.nextElementSibling.style.cssText = "display : none;";
-        offAllg.style.cssText = "background-image: url(down-button.png);";
-        offAllg.classList.add("on-group");
-        offAllg.classList.remove("off-group");
-    });
+  }else if (e.target.classList[0] === "on-group" ) {
+    hideAllGrp();
     e.target.parentElement.nextElementSibling.style.cssText =
       "display : block;";
     e.target.style.cssText = "background-image: url(up-button.png);";
@@ -1845,7 +1840,35 @@ wrapper.addEventListener("click", function (e) {
     e.target.style.cssText = "background-image: url(down-button.png);";
     e.target.classList.add("on-group");
     e.target.classList.remove("off-group");
+  };
+  if (e.target.classList[0]==="comp"||e.target.classList[0]==="gpr") {
+    
+    if(e.target.nextElementSibling.classList[0]==="on-item"){
+      hideAll();
+      e.target.parentElement.nextElementSibling.style.cssText =  "display : block;";
+      e.target.nextElementSibling.style.cssText = "background-image: url(up-button.png);";
+      e.target.nextElementSibling.classList.add("off-item");
+      e.target.nextElementSibling.classList.remove("on-item");
+    } else if (e.target.nextElementSibling.classList[0] === "off-item" ) {
+      e.target.parentElement.nextElementSibling.style.cssText =  "display : none;";
+      e.target.nextElementSibling.style.cssText = "background-image: url(down-button.png);";
+      e.target.nextElementSibling.classList.add("on-item");
+      e.target.nextElementSibling.classList.remove("off-item");
+    }else if (e.target.nextElementSibling.classList[0] === "on-group" ) {
+      hideAllGrp();
+      e.target.parentElement.nextElementSibling.style.cssText =
+        "display : block;";
+      e.target.nextElementSibling.style.cssText = "background-image: url(up-button.png);";
+      e.target.nextElementSibling.classList.add("off-group");
+      e.target.nextElementSibling.classList.remove("on-group");
+    }else if (e.target.nextElementSibling.classList[0] === "off-group") {
+      e.target.parentElement.nextElementSibling.style.cssText = "display : none;";
+      e.target.nextElementSibling.style.cssText = "background-image: url(down-button.png);";
+      e.target.nextElementSibling.classList.add("on-group");
+      e.target.nextElementSibling.classList.remove("off-group");
+    };
   }
+  
 });
 
 function sortoutArray() {
@@ -1860,7 +1883,8 @@ function sortoutArray() {
                 <p class="comp">${comp.charAt(0).toUpperCase() + comp.slice(1)}</p>
                 <div class="on-item"></div>
             </div>
-            <div class="groups">`;
+                      <div class="groups">`;
+
 
     offerArray.forEach((val) => {
       if (val.company == comp) {
@@ -1878,7 +1902,8 @@ function sortoutArray() {
                     <p class="gpr">${grp.charAt(0).toUpperCase() + grp.slice(1)}</p>
                     <div class="on-group"></div>
                 </div>
-                <div class="item-divs">`;
+                         <div class="item-divs">`;
+
       newAry.forEach((val) => {
         if (val.itemGroup == grp) {
           itnm.push(val.groupName);
@@ -1940,8 +1965,6 @@ function companySort() {
 
 
 function callLocalstroage() {
-  console.log("hello");
-  
   if (localStorage.getItem("offerPascode") && localStorage.getItem("offerPascode") == "vrs.0.11") {
     sortoutArray();
   }else{
@@ -1955,7 +1978,7 @@ function callLocalstroage() {
 };
 
 function hideAll(){
-  const offAll = document.querySelectorAll('.off-item');
+const offAll = document.querySelectorAll('.off-item');
 const offAllg = document.querySelectorAll('.off-group');
 offAll.forEach(function(offAll) {
   offAll.parentElement.nextElementSibling.style.cssText = "display : none;";
@@ -1971,6 +1994,29 @@ offAllg.forEach(function(offAllg) {
 });
 
 }
+
+function hideAllGrp(){
+  const offAllg = document.querySelectorAll('.off-group');
+  offAllg.forEach(function(offAllg) {
+    offAllg.parentElement.nextElementSibling.style.cssText = "display : none;";
+    offAllg.style.cssText = "background-image: url(down-button.png);";
+    offAllg.classList.add("on-group");
+    offAllg.classList.remove("off-group");
+});
+}
+
+// function animate(element){
+//   if (element.classList.contains('visible')) {
+//     element.style.height = '0px'; // Set height to 0 before removing the class
+//   element.addEventListener('transitionend', function handleTransitionEnd() {
+//       element.classList.remove('visible');
+//       element.removeEventListener('transitionend', handleTransitionEnd);
+//   });
+// } else {
+//   element.classList.add('visible');
+//   element.style.height = element.scrollHeight + 'px'; // Calculate and set the full height
+// }
+// }
 
 
 callLocalstroage();

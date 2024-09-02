@@ -28,6 +28,17 @@ body{
 .groups{
     display: none;
 }
+/* .hidden,.hidden1 {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+} */
+
+/* .visible, .visible1{
+    max-height: 500px; 
+    opacity: 1;
+} */
 .header{
     height: 40px;
     position: relative;
@@ -97,5 +108,9 @@ body{
 }
 .version{
     position: absolute;
-    bottom: 1px;
+    bottom: 5px;
+    right: 5px;
+    padding: 1px 5px;
+    background-color: black;
+    color: white;
 }
