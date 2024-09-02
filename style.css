@@ -70,6 +70,9 @@ body{
 .item-divs{
     display: none;
 }
+.gpr{
+    color: #0212b9;
+}
 .item-divs fieldset{
     margin: 5px 10px;
 }

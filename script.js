@@ -105,13 +105,6 @@ let offerArray = [
     company: "impex",
     itemGroup: "non-stick",
     groupName: "non-stick set",
-    itemName: "3 pcs set KTF envy",
-    oldPrice: 1500,
-    offerPrice: 1150
-  },{
-    company: "impex",
-    itemGroup: "non-stick",
-    groupName: "non-stick set",
     itemName: "3 pcs set KTF 444",
     oldPrice: 1750,
     offerPrice: 1299
@@ -212,7 +205,7 @@ let offerArray = [
     groupName: "IB",
     itemName: "eco 2+3+5",
     oldPrice: 2350,
-    offerPrice: 1890
+    offerPrice: 1950
   },{
     company: "impex",
     itemGroup: "cooker",
@@ -493,6 +486,20 @@ let offerArray = [
     itemName: "grind D Q 600",
     oldPrice: 2900,
     offerPrice: 2200
+  },{
+    company: "impex",
+    itemGroup: "mixi",
+    groupName: "mixi",
+    itemName: "Panter 800w",
+    oldPrice: 4200,
+    offerPrice: 3299
+  },{
+    company: "impex",
+    itemGroup: "mixi",
+    groupName: "mixi",
+    itemName: "starmix 750w",
+    oldPrice: 3100,
+    offerPrice: 2399
   },{
     company: "impex",
     itemGroup: "oven",
@@ -1808,32 +1815,20 @@ let offerArray = [
   },
 ];
 wrapper.addEventListener("click", function (e) {
-const offAll = document.querySelectorAll('.off-item');
-const offAllg = document.querySelectorAll('.off-group');
+
   if (e.target.classList[0] === "on-item") {
-    offAll.forEach(function(offAll) {
-        offAll.parentElement.nextElementSibling.style.cssText = "display : none;";
-        offAll.style.cssText = "background-image: url(down-button.png);";
-        offAll.classList.add("on-item");
-        offAll.classList.remove("off-item");
-    });
-    offAllg.forEach(function(offAllg) {
-        offAllg.parentElement.nextElementSibling.style.cssText = "display : none;";
-        offAllg.style.cssText = "background-image: url(down-button.png);";
-        offAllg.classList.add("on-group");
-        offAllg.classList.remove("off-group");
-    });
+    hideAll();
     e.target.parentElement.nextElementSibling.style.cssText =
       "display : block;";
     e.target.style.cssText = "background-image: url(up-button.png);";
     e.target.classList.add("off-item");
     e.target.classList.remove("on-item");
-  } else if (e.target.classList[0] === "off-item") {
+  } else if (e.target.classList[0] === "off-item" ) {
     e.target.parentElement.nextElementSibling.style.cssText = "display : none;";
     e.target.style.cssText = "background-image: url(down-button.png);";
     e.target.classList.add("on-item");
     e.target.classList.remove("off-item");
-  } else if (e.target.classList[0] === "on-group") {
+  } else if (e.target.classList[0] === "on-group" ) {
     offAllg.forEach(function(offAllg) {
         offAllg.parentElement.nextElementSibling.style.cssText = "display : none;";
         offAllg.style.cssText = "background-image: url(down-button.png);";
@@ -1862,7 +1857,7 @@ function sortoutArray() {
 
     pushcode += `<div class="items">
             <div class="header">
-                <p>${comp.charAt(0).toUpperCase() + comp.slice(1)}</p>
+                <p class="comp">${comp.charAt(0).toUpperCase() + comp.slice(1)}</p>
                 <div class="on-item"></div>
             </div>
             <div class="groups">`;
@@ -1880,7 +1875,7 @@ function sortoutArray() {
       pushcode += ` 
             <div class="item-names">
                 <div class="itmnm-head">
-                    <p>${grp.charAt(0).toUpperCase() + grp.slice(1)}</p>
+                    <p class="gpr">${grp.charAt(0).toUpperCase() + grp.slice(1)}</p>
                     <div class="on-group"></div>
                 </div>
                 <div class="item-divs">`;
@@ -1958,6 +1953,26 @@ function callLocalstroage() {
   document.write("No Data found");
   }
 };
+
+function hideAll(){
+  const offAll = document.querySelectorAll('.off-item');
+const offAllg = document.querySelectorAll('.off-group');
+offAll.forEach(function(offAll) {
+  offAll.parentElement.nextElementSibling.style.cssText = "display : none;";
+  offAll.style.cssText = "background-image: url(down-button.png);";
+  offAll.classList.add("on-item");
+  offAll.classList.remove("off-item");
+});
+offAllg.forEach(function(offAllg) {
+  offAllg.parentElement.nextElementSibling.style.cssText = "display : none;";
+  offAllg.style.cssText = "background-image: url(down-button.png);";
+  offAllg.classList.add("on-group");
+  offAllg.classList.remove("off-group");
+});
+
+}
+
+
 callLocalstroage();
 if("serviceWorker" in navigator){
   navigator.serviceWorker.register("srworker.js").then(registration=>{
