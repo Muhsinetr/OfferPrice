@@ -1813,30 +1813,171 @@ let offerArray = [
     oldPrice: 3650,
     offerPrice: 3150
   },
+  /////vyan
+  {
+    company: "vyan",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "3 ltr",
+    oldPrice: 1000,
+    offerPrice: 750
+  },{
+    company: "vyan",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "5 ltr",
+    oldPrice: 1390,
+    offerPrice: 1050
+  },{
+    company: "vyan",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "10 ltr",
+    oldPrice: 1550,
+    offerPrice: 1249
+  },{
+    company: "vyan",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "12 ltr",
+    oldPrice: 1700,
+    offerPrice: 1399
+  },{
+    company: "vyan",
+    itemGroup: "cooker",
+    groupName: "steel",
+    itemName: "3 ltr ss",
+    oldPrice: 1450,
+    offerPrice: 1190
+  },{
+    company: "vyan",
+    itemGroup: "cooker",
+    groupName: "steel",
+    itemName: "5 ltr ss",
+    oldPrice: 1810,
+    offerPrice: 1499
+  },{
+    company: "vyan",
+    itemGroup: "kuzhiyappam",
+    groupName: "kuzhiyappam",
+    itemName: "7 regular",
+    oldPrice: 810,
+    offerPrice: 449
+  },{
+    company: "vyan",
+    itemGroup: "kuzhiyappam",
+    groupName: "kuzhiyappam",
+    itemName: "7 special",
+    oldPrice: 750,
+    offerPrice: 499
+  },{
+    company: "vyan",
+    itemGroup: "kuzhiyappam",
+    groupName: "kuzhiyappam",
+    itemName: "7 jumbo",
+    oldPrice: 1190,
+    offerPrice: 899
+  },{
+    company: "vyan",
+    itemGroup: "kuzhiyappam",
+    groupName: "kuzhiyappam",
+    itemName: "9 sepcial",
+    oldPrice: 960,
+    offerPrice: 649
+  },{
+    company: "vyan",
+    itemGroup: "frypan",
+    groupName: "frypan",
+    itemName: "frypan 240/3mm",
+    oldPrice: 720,
+    offerPrice: 570
+  },{
+    company: "vyan",
+    itemGroup: "frypan",
+    groupName: "frypan",
+    itemName: "frypan cute 200/3mm",
+    oldPrice: 610,
+    offerPrice: 399
+  },{
+    company: "vyan",
+    itemGroup: "frypan",
+    groupName: "frypan",
+    itemName: "frypan cute 200/3mm + lid",
+    oldPrice: 690,
+    offerPrice: 430
+  },{
+    company: "vyan",
+    itemGroup: "tawa",
+    groupName: "tawa",
+    itemName: "tawa 260/3mm",
+    oldPrice: 720,
+    offerPrice: 399
+  },{
+    company: "vyan",
+    itemGroup: "tawa",
+    groupName: "tawa",
+    itemName: "tawa 280/4mm",
+    oldPrice: 850,
+    offerPrice: 499
+  },{
+    company: "vyan",
+    itemGroup: "kadai",
+    groupName: "kadai",
+    itemName: "kadai cute 200",
+    oldPrice: 680,
+    offerPrice: 449
+  },{
+    company: "vyan",
+    itemGroup: "kadai",
+    groupName: "kadai",
+    itemName: "kadai 24",
+    oldPrice: 730,
+    offerPrice: 579
+  },{
+    company: "vyan",
+    itemGroup: "kadai",
+    groupName: "kadai",
+    itemName: "kadai 28",
+    oldPrice: 910,
+    offerPrice: 699
+  },{
+    company: "vyan",
+    itemGroup: "pathiri Tawa",
+    groupName: "pathiri Tawa",
+    itemName: "super 320/5mm",
+    oldPrice: 1200,
+    offerPrice: 759
+  },{
+    company: "vyan",
+    itemGroup: "appachatty",
+    groupName: "appachatty",
+    itemName: "appachatty deep 23",
+    oldPrice: 630,
+    offerPrice: 490
+  },
 ];
 wrapper.addEventListener("click", function (e) {
 
   if (e.target.classList[0] === "on-item") {
     hideAll();
-    e.target.parentElement.nextElementSibling.style.cssText =  "display : block;";
+    e.target.parentElement.nextElementSibling.classList.add("grpSh");
     e.target.style.cssText = "background-image: url(up-button.png);";
     e.target.classList.add("off-item");
     e.target.classList.remove("on-item");
   } 
   else if (e.target.classList[0] === "off-item" ) {
-    e.target.parentElement.nextElementSibling.style.cssText =  "display : none;";
+    e.target.parentElement.nextElementSibling.classList.remove("grpSh");
     e.target.style.cssText = "background-image: url(down-button.png);";
     e.target.classList.add("on-item");
     e.target.classList.remove("off-item");
   }else if (e.target.classList[0] === "on-group" ) {
     hideAllGrp();
-    e.target.parentElement.nextElementSibling.style.cssText =
-      "display : block;";
+    e.target.parentElement.nextElementSibling.classList.add("itemSh");
     e.target.style.cssText = "background-image: url(up-button.png);";
     e.target.classList.add("off-group");
     e.target.classList.remove("on-group");
   } else if (e.target.classList[0] === "off-group") {
-    e.target.parentElement.nextElementSibling.style.cssText = "display : none;";
+    e.target.parentElement.nextElementSibling.classList.remove("itemSh")
     e.target.style.cssText = "background-image: url(down-button.png);";
     e.target.classList.add("on-group");
     e.target.classList.remove("off-group");
@@ -1845,24 +1986,23 @@ wrapper.addEventListener("click", function (e) {
     
     if(e.target.nextElementSibling.classList[0]==="on-item"){
       hideAll();
-      e.target.parentElement.nextElementSibling.style.cssText =  "display : block;";
+      e.target.parentElement.nextElementSibling.classList.add("grpSh");
       e.target.nextElementSibling.style.cssText = "background-image: url(up-button.png);";
       e.target.nextElementSibling.classList.add("off-item");
       e.target.nextElementSibling.classList.remove("on-item");
     } else if (e.target.nextElementSibling.classList[0] === "off-item" ) {
-      e.target.parentElement.nextElementSibling.style.cssText =  "display : none;";
+      e.target.parentElement.nextElementSibling.classList.remove("grpSh");
       e.target.nextElementSibling.style.cssText = "background-image: url(down-button.png);";
       e.target.nextElementSibling.classList.add("on-item");
       e.target.nextElementSibling.classList.remove("off-item");
     }else if (e.target.nextElementSibling.classList[0] === "on-group" ) {
       hideAllGrp();
-      e.target.parentElement.nextElementSibling.style.cssText =
-        "display : block;";
+      e.target.parentElement.nextElementSibling.classList.add("itemSh");
       e.target.nextElementSibling.style.cssText = "background-image: url(up-button.png);";
       e.target.nextElementSibling.classList.add("off-group");
       e.target.nextElementSibling.classList.remove("on-group");
     }else if (e.target.nextElementSibling.classList[0] === "off-group") {
-      e.target.parentElement.nextElementSibling.style.cssText = "display : none;";
+      e.target.parentElement.nextElementSibling.classList.remove("itemSh");
       e.target.nextElementSibling.style.cssText = "background-image: url(down-button.png);";
       e.target.nextElementSibling.classList.add("on-group");
       e.target.nextElementSibling.classList.remove("off-group");
@@ -1883,7 +2023,8 @@ function sortoutArray() {
                 <p class="comp">${comp.charAt(0).toUpperCase() + comp.slice(1)}</p>
                 <div class="on-item"></div>
             </div>
-                      <div class="groups">`;
+                      <div class="groups">
+                      <div class = "grpHd">`;
 
 
     offerArray.forEach((val) => {
@@ -1902,8 +2043,9 @@ function sortoutArray() {
                     <p class="gpr">${grp.charAt(0).toUpperCase() + grp.slice(1)}</p>
                     <div class="on-group"></div>
                 </div>
-                         <div class="item-divs">`;
-
+                         <div class="item-divs">
+                         <div class = "itemHd">`;
+                            
       newAry.forEach((val) => {
         if (val.itemGroup == grp) {
           itnm.push(val.groupName);
@@ -1929,11 +2071,12 @@ function sortoutArray() {
         pushcode += `</fieldset>`;
       });
       pushcode +=`</div>
-            
+            </div>
         </div>`;
     });
     
     pushcode += `</div>
+                </div>
                 </div> `
   });
   wrapper.innerHTML = pushcode;
@@ -1947,22 +2090,6 @@ function companySort() {
   let sortedDArray = [...new Set(sortedItemArray)];
   return sortedDArray;
 }
-
-// let nl = null;
-// function animate(elem) {
-//   let pos = 0;
-//   clearInterval(nl);
-//   id = setInterval(frame, 10);
-//   function frame() {
-//     if (pos == 100) {
-//       clearInterval(nl);
-//     } else {
-//       pos++; 
-//       elem.style.opacity = pos + '%'; 
-//     }
-//   }
-// }
-
 
 function callLocalstroage() {
   if (localStorage.getItem("offerPascode") && localStorage.getItem("offerPascode") == "vrs.0.11") {
@@ -1981,13 +2108,13 @@ function hideAll(){
 const offAll = document.querySelectorAll('.off-item');
 const offAllg = document.querySelectorAll('.off-group');
 offAll.forEach(function(offAll) {
-  offAll.parentElement.nextElementSibling.style.cssText = "display : none;";
+  offAll.parentElement.nextElementSibling.classList.remove("grpSh");
   offAll.style.cssText = "background-image: url(down-button.png);";
   offAll.classList.add("on-item");
   offAll.classList.remove("off-item");
 });
 offAllg.forEach(function(offAllg) {
-  offAllg.parentElement.nextElementSibling.style.cssText = "display : none;";
+  offAllg.parentElement.nextElementSibling.classList.remove("itemSh");
   offAllg.style.cssText = "background-image: url(down-button.png);";
   offAllg.classList.add("on-group");
   offAllg.classList.remove("off-group");
@@ -1998,26 +2125,12 @@ offAllg.forEach(function(offAllg) {
 function hideAllGrp(){
   const offAllg = document.querySelectorAll('.off-group');
   offAllg.forEach(function(offAllg) {
-    offAllg.parentElement.nextElementSibling.style.cssText = "display : none;";
+    offAllg.parentElement.nextElementSibling.classList.remove("itemSh");
     offAllg.style.cssText = "background-image: url(down-button.png);";
     offAllg.classList.add("on-group");
     offAllg.classList.remove("off-group");
 });
 }
-
-// function animate(element){
-//   if (element.classList.contains('visible')) {
-//     element.style.height = '0px'; // Set height to 0 before removing the class
-//   element.addEventListener('transitionend', function handleTransitionEnd() {
-//       element.classList.remove('visible');
-//       element.removeEventListener('transitionend', handleTransitionEnd);
-//   });
-// } else {
-//   element.classList.add('visible');
-//   element.style.height = element.scrollHeight + 'px'; // Calculate and set the full height
-// }
-// }
-
 
 callLocalstroage();
 if("serviceWorker" in navigator){
