@@ -393,7 +393,7 @@ let offerArray = [
     itemGroup: "gas stove",
     groupName: "glass top",
     itemName: "aira 2B frameless",
-    oldPrice: 2400,
+    oldPrice: 5400,
     offerPrice: 4590
   },{
     company: "impex",
@@ -550,28 +550,28 @@ let offerArray = [
     //////BPL
     
     {
-    company: "BPL",
+    company: "bPL",
     itemGroup: "kettle",
     groupName: "kettle",
     itemName: "kettle 1.8 00118",
     oldPrice: 900,
     offerPrice: 780
   },{
-    company: "BPL",
+    company: "bPL",
     itemGroup: "mixi",
     groupName: "mixi",
     itemName: "3 jar 500w 46150 +c",
     oldPrice: 2650,
     offerPrice: 2150
   },{
-    company: "BPL",
+    company: "bPL",
     itemGroup: "mixi",
     groupName: "mixi",
     itemName: "3 jar 750w 30975 + c",
     oldPrice: 4250,
     offerPrice: 3590
   },{
-    company: "BPL",
+    company: "bPL",
     itemGroup: "mixi",
     groupName: "mixi",
     itemName: "4 jar 750w 45275 + c",
@@ -586,7 +586,7 @@ let offerArray = [
     itemName: "blueline 5 ltr",
     oldPrice: 2950,
     offerPrice: 2590
-  },,{
+  },{
     company: "butterfly",
     itemGroup: "cooker",
     groupName: "steel",
@@ -676,7 +676,15 @@ let offerArray = [
     groupName: "glass top",
     itemName: "treo pluse 3 B",
     oldPrice: 4600,
-    offerPrice: 3850
+    offerPrice: 3950
+  },
+  {
+    company: "butterfly",
+    itemGroup: "gas stove",
+    groupName: "glass top",
+    itemName: "treo pluse 2 B",
+    oldPrice: 3600,
+    offerPrice: 2950
   },{
     company: "butterfly",
     itemGroup: "mixi",
@@ -720,205 +728,205 @@ let offerArray = [
     oldPrice: 5100,
     offerPrice: 4200
   },
-  //////Gabry
+  //////gabry
       {
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "biriyani Pot",
     groupName: "biriyani Pot",
     itemName: "20 Ltr",
     oldPrice: 3650,
     offerPrice: 2950
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "biriyani Pot",
     groupName: "biriyani Pot",
     itemName: "15 Ltr",
     oldPrice: 3100,
     offerPrice: 2450
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "biriyani Pot",
     groupName: "biriyani Pot",
     itemName: "10 Ltr",
     oldPrice: 2450,
     offerPrice: 1990
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "biriyani Pot",
     groupName: "biriyani Pot",
     itemName: "8 Ltr",
     oldPrice: 2000,
     offerPrice: 1550
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "biriyani Pot",
     groupName: "biriyani Pot",
     itemName: "4.5 Ltr",
     oldPrice: 1550,
     offerPrice: 1250
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "cooking Pot",
     groupName: "cooking Pot",
     itemName: "cooking pot med",
     oldPrice: 1200,
     offerPrice: 949
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "cooking Pot",
     groupName: "cooking Pot",
     itemName: "cooking pot sml",
     oldPrice: 1100,
     offerPrice: 849
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "frypan",
     groupName: "frypan",
     itemName: "frypan mini",
     oldPrice: 600,
     offerPrice: 450
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "frypan",
     groupName: "frypan",
     itemName: "frypan small elgnt + lid",
     oldPrice: 860,
     offerPrice: 699
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "frypan",
     groupName: "frypan",
     itemName: "frypan med basic",
     oldPrice: 700,
     offerPrice: 530
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "frypan",
     groupName: "frypan",
     itemName: "frypan large basic",
     oldPrice: 990,
     offerPrice: 849
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "frypan",
     groupName: "frypan",
     itemName: "frypan small IB + lid",
     oldPrice: 830,
     offerPrice: 680
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "tawa",
     groupName: "basic",
     itemName: "tawa small basic",
     oldPrice: 690,
     offerPrice: 475
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "tawa",
     groupName: "basic",
     itemName: "tawa med basic",
     oldPrice: 750,
     offerPrice: 535
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "tawa",
     groupName: "basic",
     itemName: "tawa large basic",
     oldPrice: 800,
     offerPrice: 625
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "tawa",
     groupName: "basic",
     itemName: "tawa large basic IB",
     oldPrice: 900,
     offerPrice: 690
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "tawa",
     groupName: "elegent",
     itemName: "tawa small elg",
     oldPrice: 700,
     offerPrice: 499
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "tawa",
     groupName: "elegent",
     itemName: "tawa large elegant",
     oldPrice: 800,
     offerPrice: 575
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "tawa",
     groupName: "edgless",
     itemName: "tawa mini edgless",
     oldPrice: 1350,
     offerPrice: 1100
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "tawa",
     groupName: "basic",
     itemName: "tawa med basic IB",
     oldPrice: 700,
     offerPrice: 599
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "kadai",
     groupName: "kadai",
     itemName: "kadai med",
     oldPrice: 1150,
     offerPrice: 875
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "kadai",
     groupName: "kadai",
     itemName: "kadai med elegant + glass lid",
     oldPrice: 1250,
     offerPrice: 975
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "kadai",
     groupName: "kadai",
     itemName: "kadai small basic",
     oldPrice: 900,
     offerPrice: 690
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "non-stick set",
     groupName: "set",
     itemName: "tawa + frypan + kadai KTF",
     oldPrice: 1450,
     offerPrice: 1085
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "non-stick set",
     groupName: "set",
     itemName: "tawa + frypan FT combo",
     oldPrice: 950,
     offerPrice: 749
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "pathiri tawa",
     groupName: "pathiri tawa",
     itemName: "SQ flat edg 2259",
     oldPrice: 1680,
     offerPrice: 1299
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "pathiri tawa",
     groupName: "pathiri tawa",
     itemName: "SQ flat edg 2688",
     oldPrice: 1800,
     offerPrice: 1549
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "stew pot",
     groupName: "stewpot",
     itemName: "stewpot glass lid",
     oldPrice: 950,
     offerPrice: 749
   },{
-    company: "Gabry",
+    company: "gabry",
     itemGroup: "stew pot",
     groupName: "stewpot",
     itemName: "stewpot SS lid",
@@ -1107,119 +1115,119 @@ let offerArray = [
   
   ///////lisma
       {
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "frypan",
     groupName: "frypan",
     itemName: "frypan IB sml",
     oldPrice: 750,
     offerPrice: 590
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "frypan",
     groupName: "frypan",
     itemName: "frypan IB med",
     oldPrice: 790,
     offerPrice: 640
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "frypan",
     groupName: "frypan",
     itemName: "frypan med",
     oldPrice: 720,
     offerPrice: 575
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "tawa",
     groupName: "tawa ",
     itemName: "tawa large",
     oldPrice: 760,
     offerPrice: 590
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "tawa",
     groupName: "tawa ",
     itemName: "tawa med",
     oldPrice: 660,
     offerPrice: 480
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "tawa",
     groupName: "tawa ",
     itemName: "tawa small",
     oldPrice: 610,
     offerPrice: 475
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "tawa",
     groupName: "tawa IB",
     itemName: "tawa large IB",
     oldPrice: 810,
     offerPrice: 650
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "tawa",
     groupName: "tawa IB",
     itemName: "tawa med IB",
     oldPrice: 730,
     offerPrice: 550
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "tawa",
     groupName: "tawa IB",
     itemName: "tawa small IB",
     oldPrice: 640,
     offerPrice: 525
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "kadayi",
     groupName: "kadayi",
     itemName: "kadayi med",
     oldPrice: 1299,
     offerPrice: 975
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "kadayi",
     groupName: "kadayi",
     itemName: "kadayi med IB",
     oldPrice: 1280,
     offerPrice: 995
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "kadayi",
     groupName: "kadayi",
     itemName: "kadayi small IB",
     oldPrice: 1050,
     offerPrice: 850
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "pathiri tawa",
     groupName: "pathiri tawa",
     itemName: "pathiri tawa flat edge",
     oldPrice: 1510,
     offerPrice: 1295
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "pathiri tawa",
     groupName: "pathiri tawa",
     itemName: "pathiri tawa four edge",
     oldPrice: 1660,
     offerPrice: 1350
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "appachatty",
     groupName: "appachatty",
     itemName: "appachatty 4 mm",
     oldPrice: 650,
     offerPrice: 495
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "gravy pot ",
     groupName: "gravy pot ",
     itemName: "gravy pot IB",
     oldPrice: 1610,
     offerPrice: 1395
   },{
-    company: "Lisma",
+    company: "lisma",
     itemGroup: "nonstick set",
     groupName: "nonstick set",
     itemName: "nonstick set 3 pcs",
@@ -1286,37 +1294,80 @@ let offerArray = [
     oldPrice: 910,
     offerPrice: 749
   },
+  ,{
+    company: "prestige",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "3 ltr swatch",
+    oldPrice: 1850,
+    offerPrice: 1400
+  },
+  ,{
+    company: "prestige",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "5 ltr swatch",
+    oldPrice: 2350,
+    offerPrice: 1890
+  },
+  ,{
+    company: "prestige",
+    itemGroup: "cooker",
+    groupName: "steel",
+    itemName: "3 ltr popular ss",
+    oldPrice: 2600,
+    offerPrice: 2080
+  },
+  ,{
+    company: "prestige",
+    itemGroup: "cooker",
+    groupName: "steel",
+    itemName: "5 ltr popular ss",
+    oldPrice: 3300,
+    offerPrice: 2650
+  },
+
+  ///// Gflame
+  ,{
+    company: "gflame",
+    itemGroup: "gas stove",
+    groupName: "steel",
+    itemName: "gas stove eco 2B",
+    oldPrice: 2400,
+    offerPrice: 1750
+  },
+
   //////Qb
       {
-    company: "QBee",
+    company: "qbee",
     itemGroup: "gas stove",
     groupName: "steel",
     itemName: "SS 2B classic",
     oldPrice: 2100,
     offerPrice: 1700
   },{
-    company: "QBee",
+    company: "qbee",
     itemGroup: "gas stove",
     groupName: "glass top",
     itemName: "2B mini/nano",
     oldPrice: 2450,
     offerPrice: 1899
   },{
-    company: "QBee",
+    company: "qbee",
     itemGroup: "gas stove",
     groupName: "glass top",
     itemName: "2B splendour",
     oldPrice: 3500,
     offerPrice: 2899
   },{
-    company: "QBee",
+    company: "qbee",
     itemGroup: "rice cooker",
     groupName: "steel",
     itemName: "SS 1 Kg",
     oldPrice: 1750,
     offerPrice: 1490
   },{
-    company: "QBee",
+    company: "qbee",
     itemGroup: "rice cooker",
     groupName: "steel",
     itemName: "SS 1.5 Kg",
@@ -1327,77 +1378,77 @@ let offerArray = [
       {
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium outer lid",
     itemName: "1.5 ltr o/l",
     oldPrice: 650,
     offerPrice: 499
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium outer lid",
     itemName: "2 ltr o/l",
     oldPrice: 790,
     offerPrice: 550
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium inner lid",
     itemName: "2 ltr i/l",
     oldPrice: 790,
     offerPrice: 549
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium outer lid",
     itemName: "3 ltr o/l",
     oldPrice: 850,
     offerPrice: 599
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium inner lid",
     itemName: "3 ltr i/l",
     oldPrice: 900,
     offerPrice: 690
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium outer lid",
     itemName: "5 ltr o/l",
     oldPrice: 950,
     offerPrice: 699
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium inner lid",
     itemName: "5 ltr i/l",
     oldPrice: 1200,
     offerPrice: 890
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium outer lid",
     itemName: "5 Ltr + 3 Ltr combo",
     oldPrice: 1350,
     offerPrice: 990
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium outer lid",
     itemName: "7.5 ltr pluse heavy",
     oldPrice: 1400,
     offerPrice: 1060
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium outer lid",
     itemName: "10 ltr heavy",
     oldPrice: 1500,
     offerPrice: 1150
   },{
     company: "rasoiya",
     itemGroup: "cooker",
-    groupName: "aluminium",
+    groupName: "aluminium outer lid",
     itemName: "12 ltr heavy",
     oldPrice: 1650,
     offerPrice: 1250
@@ -1819,42 +1870,42 @@ let offerArray = [
     itemGroup: "cooker",
     groupName: "aluminium",
     itemName: "3 ltr",
-    oldPrice: 1000,
+    oldPrice: 1100,
     offerPrice: 750
   },{
     company: "vyan",
     itemGroup: "cooker",
     groupName: "aluminium",
     itemName: "5 ltr",
-    oldPrice: 1390,
-    offerPrice: 1050
+    oldPrice: 1550,
+    offerPrice: 999
   },{
     company: "vyan",
     itemGroup: "cooker",
     groupName: "aluminium",
     itemName: "10 ltr",
-    oldPrice: 1550,
-    offerPrice: 1249
+    oldPrice: 1950,
+    offerPrice: 1349
   },{
     company: "vyan",
     itemGroup: "cooker",
     groupName: "aluminium",
     itemName: "12 ltr",
-    oldPrice: 1700,
-    offerPrice: 1399
+    oldPrice: 2100,
+    offerPrice: 1499
   },{
     company: "vyan",
     itemGroup: "cooker",
     groupName: "steel",
     itemName: "3 ltr ss",
-    oldPrice: 1450,
+    oldPrice: 1750,
     offerPrice: 1190
   },{
     company: "vyan",
     itemGroup: "cooker",
     groupName: "steel",
     itemName: "5 ltr ss",
-    oldPrice: 1810,
+    oldPrice: 2100,
     offerPrice: 1499
   },{
     company: "vyan",
@@ -1954,6 +2005,71 @@ let offerArray = [
     itemName: "appachatty deep 23",
     oldPrice: 630,
     offerPrice: 490
+  },
+  ///////premix
+  {
+    company: "premix",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "3 ltr",
+    oldPrice: 850,
+    offerPrice: 599
+  },
+  {
+    company: "premix",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "5 ltr",
+    oldPrice: 950,
+    offerPrice: 699
+  },
+  {
+    company: "premix",
+    itemGroup: "cooker",
+    groupName: "steel",
+    itemName: "3 ltr ss",
+    oldPrice: 1250,
+    offerPrice: 999
+  },
+  {
+    company: "premix",
+    itemGroup: "cooker",
+    groupName: "steel",
+    itemName: "5 ltr ss",
+    oldPrice: 1700,
+    offerPrice: 1349
+  },
+  {
+    company: "premix",
+    itemGroup: "rice cooker",
+    groupName: "steel",
+    itemName: "1 kg",
+    oldPrice: 1900,
+    offerPrice: 1450
+  },
+  {
+    company: "premix",
+    itemGroup: "rice cooker",
+    groupName: "steel",
+    itemName: "1.5 kg",
+    oldPrice: 2100,
+    offerPrice: 1590
+  },
+  {
+    company: "sukanya",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "3 ltr swatch",
+    oldPrice: 950,
+    offerPrice: 599
+  },
+  {
+    company: "sukanya",
+    itemGroup: "cooker",
+    groupName: "aluminium",
+    itemName: "5 ltr swatch",
+    oldPrice: 1100,
+    offerPrice: 749
   },
 ];
 wrapper.addEventListener("click", function (e) {
@@ -2088,7 +2204,8 @@ function companySort() {
     sortedItemArray.push(val.company);
   });
   let sortedDArray = [...new Set(sortedItemArray)];
-  return sortedDArray;
+  let sortsorted = sortedDArray.sort();
+  return sortsorted
 }
 
 function callLocalstroage() {
